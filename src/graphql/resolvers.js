@@ -21,11 +21,11 @@ export const resolvers = {
         stream.pipe(uploadStream.writeStream);
         result = await uploadStream.promise;
       } catch (error) {
-        console.log(error);
+        console.log(
+          `[Error]: Message: ${error.message}, Stack: ${error.stack}`
+        );
         throw new ApolloError("Error uploading file");
       }
-
-      console.log(result);
 
       return result;
     },
