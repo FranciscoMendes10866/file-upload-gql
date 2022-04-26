@@ -1,0 +1,9 @@
+# GQL API
+node_modules/
+pnpm-lock.yaml
+
+# Frontend
+frontend/node_modules/
+frontend/.parcel-cache/
+frontend/dist/
+frontend/pnpm-lock.yaml
